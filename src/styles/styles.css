@@ -1,0 +1,227 @@
+@font-face {
+  font-family: inconsolata;
+  src:url(../fonts/Inconsolata-Regular.ttf);
+}
+
+@font-face {
+  font-family:playfairBlack;
+  src:url(../fonts/PlayfairDisplay-Black.otf);
+}
+
+@font-face {
+  font-family:playfairItalic;
+  src:url(../fonts/PlayfairDisplayItalic.ttf);
+}
+
+@font-face {
+  font-family:playfairRegular;
+  src:url(../fonts/PlayfairDisplayRegular.ttf);
+}
+
+@font-face {
+  font-family:ubuntu;
+  src:url(../fonts/Ubuntu-L.ttf);
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  width: 1062px;
+  margin: 0 auto;
+  clear: both;
+}
+
+.wrapper:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo{
+  font-family: inconsolata;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 30px;
+}
+
+.logo ul {
+  padding: 0;
+}
+
+nav {
+  height: 100px;
+  float: right;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  font-size: 14px;
+  padding-top: 60px;
+  padding-left: 60px;
+  font-family: playfairRegular;
+  text-transform: uppercase;
+  color: #626262;
+}
+
+.image {
+}
+
+.aboutMe {
+  float: right;
+  margin-top: 45px;
+  width: 272px;
+  height: 200px;
+  background:url(../images/About_me.jpg) no-repeat center;
+}
+
+.aboutMeAbout {
+  font-family: playfairRegular;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-top: 200px;
+}
+
+.aboutMeText {
+  width: 75%;
+  color: #626262;
+}
+
+.shareAbout {
+  list-style: none;
+  padding: 0;
+}
+
+.shareAbout li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.topPostsText {
+  font-family: ubuntu;
+  font-size: 14px;
+  color: #b4ad9e;
+  text-transform: uppercase;
+}
+
+.topPosts {
+  padding-left: 20px;
+}
+.topPosts li {
+  margin-bottom: 15px;
+  font-family: playfairRegular;
+  font-size: 16px;
+  color: #626262;
+}
+.topPosts .desc {
+  font-family: ubuntu;
+  font-size: 12px;
+  display: block;
+  color: #b4ad9e;
+}
+
+.govno {
+  padding: 0 20px;
+  font-family: playfairItalic;
+  font-size: 14px;
+  color: #626262;
+}
+
+article {
+  float: left;
+  width: calc(100% - 272px);
+}
+
+article .article_pad {
+  padding-right: 130px;
+}
+
+.photodiary {
+  font-family: ubuntu;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 40px;
+  color: #626262;
+}
+
+.headOfArticle h1 {
+  float: left;
+  font-family: playfairRegular;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.article p {
+  float: left;
+  font-family: playfairRegular;
+  font-size: 14px;
+  color: #626262;
+}
+
+.article p span {
+  font-family: playfairBlack;
+}
+
+.articleImages img {
+  max-width: 100%;
+}
+
+.shareBottom {
+  text-align: center;
+}
+
+.shareBottom .shareText {
+  font-family: ubuntu;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #b4ad9e;
+}
+
+footer {
+  background-color: #d9d9d9;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.leftFooterMenu {
+  list-style: none;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.leftFooterMenu li {
+  display: inline-block;
+  margin-right: 15px;
+  font-family: playfairRegular;
+  font-size: 14px;
+}
+
+.rightFooterMenu {
+  list-style: none;
+  float: right;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.rightFooterMenu li {
+  float: right;
+  margin-left: 20px;
+  display: inline-block;
+  font-family: playfairRegular;
+  font-size: 14px;
+}
