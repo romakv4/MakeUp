@@ -1,5 +1,5 @@
 @font-face {
-  font-family: inconsolata;
+  font-family:inconsolata;
   src:url(../fonts/Inconsolata-Regular.ttf);
 }
 
@@ -22,6 +22,7 @@
   font-family:ubuntu;
   src:url(../fonts/Ubuntu-L.ttf);
 }
+
 a {
   text-decoration: none;
   color: black;
