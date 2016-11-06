@@ -5,105 +5,76 @@
   <meta charset="utf-8" />
   <link rel="stylesheet" type="text/css" href="../styles/styles.css">
 </head>
-<body>
-  <div class="wrapper">
-  <header>
-  <nav>
-      <ul>
-        <li><a href="">lifestyle</a></li>
-        <li><a href="">photodiary</a></li>
-        <li><a href="">music</a></li>
-        <li><a href="">travel</a></li>
-        </ul>
-      </nav>
-      <div class="logo">
-    <ul>
-      <a href="index.html">minimø</a>
-    </ul>
-  </div>
+<body class="body">
+<div class="wrapper">
+  <header class="header">
+      <li class="header__logo"><a href="index.html">minimø</a></li>
+    <nav class="header__navigation">
+      <li class="header__navigation_point"><a href="">lifestyle</a></li>
+      <li class="header__navigation_point"><a href="">photodiary</a></li>
+      <li class="header__navigation_point"><a href="">music</a></li>
+      <li class="header__navigation_point"><a href="">travel</a></li>
+    </nav>
   </header>
-    <div class="image"><img src="../images/Cover_image.jpg" alt=""></div>
-    <article>
-      <div class="article_pad">
-      <div class = "photodiary">
-          <p>photodiary</p>
-      </div>
-      <div class = "headOfArticle">
-          <h1>The perfect weekend getaway</h1>
-      </div>
-      <div class = "article">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</span>, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-      </div>
-      <div class = "articleImages">
-        <img src="../images/Article_image1.jpg">
-        <img src="../images/Article_image2.jpg">
-        <img src="../images/Article_image3.jpg">
-      </div>
-      <div>
-        <p class = "govno">
-        <i>
-          “Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.”
-          </i>
-          </p>
-      <div class="article">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</span>, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-        </p>
-        </div>
-      </div>
+    <img src="../images/Cover_image.jpg" alt="Cover">
+    <article class="article">
+      <p class="article__photodiary">photodiary</p>
+      <h1 class="article__headOfArticle">The perfect weekend getaway</h1>
+      <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</span>, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+      <img class="article__articleImages" src="../images/Article_image1.jpg" alt="Tetka1">
+      <img class="article__articleImages" src="../images/Article_image2.jpg" alt="Tetka2">
+      <img class="article__articleImages" src="../images/Article_image3.jpg" alt="Tetka3">
+      <li class = "article__abzac">
+        “Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.”
+      </li>
+      <p class="article__text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</span>, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+      </p>
+      <ul class="article__share">
+        <li class = "article__share_icon">share</li>
+        <li class="article__share_icon"><a href=""><img src="../images/g+Icon.png" alt="Google+"></a></li>
+        <li class="article__share_icon"><a href=""><img src="../images/tumblrIcon.png" alt="Tumblr"></a></li>
+        <li class="article__share_icon"><a href=""><img src="../images/twIcon.png" alt="Twitter"></a></li>
+        <li class="article__share_icon"><a href=""><img src="../images/fbIcon.png" alt="Facebook"></a></li>
+        <li class="article__share_icon"><a href=""><img src="../images/pinterestcon.png" alt="Pinterest"></a></li>
+      </ul>
     </article>
-
       <aside class = "aboutMe">
       <!-- About me image-->
-        <div class="aboutMeAbout">about me</div>
-          <div class="aboutMeText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</div>
-          <ul class="shareAbout">
-            <li><img src="../images/facebookIcon1.png"></li>
-        <li><img src="../images/instagramIcon1.png"></li>
-        <li><img src="../images/twitterIcon1.png"></li>
+      <img src="../images/About_me.jpg">
+        <li class="aboutMe__about">about me</li>
+        <li class="aboutMe__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</li>
+        <ul class="aboutMe__share">
+          <li class="aboutMe__share_icon"><a href=""><img src="../images/facebookIcon1.png" alt="Facebook"></a></li>
+          <li class="aboutMe__share_icon"><a href=""><img src="../images/instagramIcon1.png" alt="Insta"></a></li>
+          <li class="aboutMe__share_icon"><a href=""><img src="../images/twitterIcon1.png" alt="Twitter"></a></li>
         </ul>
-      <div class="topPostsText">top posts</div>
-      <ul class = "topPosts">
-          <li><a href="">
-            A day exploring the Alps
-            <span class="desc">23 COMMENTS</span>
-          </a></li>
-          <li><a href="">
-            American dream
-            <span class="desc">14 COMMENTS</span>
-          </a></li>
-          <li><a href="">
-            Cold winter days
-            <span class="desc">12 COMMENTS</span>
-          </a></li>
-        </ul>
-        <div class = "banner">
-          <img src="../images/Banner_image.jpg">
-        </div>
+      <li class="aboutMe__topPostsText">top posts</li>
+      <li class="aboutMe__topPostsHead"><a class="aboutMe__topPostsHead_link" href="">
+          A day exploring the Alps
+        <span class="aboutMe__topPostsComments">23 COMMENTS</span>
+      </a></li>
+      <li class="aboutMe__topPostsHead"><a class="aboutMe__topPostsHead_link" href="">
+          American dream
+        <span class="aboutMe__topPostsComments">14 COMMENTS</span>
+      </a></li>
+      <li class="aboutMe__topPostsHead"><a class="aboutMe__topPostsHead_link" href="">
+          Cold winter days
+        <span class="aboutMe__topPostsComments">12 COMMENTS</span>
+      </a></li>
+      <img class="aboutMe__banner" src="../images/Banner_image.jpg">
     </aside>
     </div>
-    <div class="shareBottom">
-      <ul class="shareAbout">
-      <li class = "shareText">share</li>
-
-      <li><img src="../images/g+Icon.png"></li>
-      <li><img src="../images/tumblrIcon.png"></li>
-            <li><img src="../images/twIcon.png">  </li>
-        <li><img src="../images/fbIcon.png"></li>
-        <li><img src="../images/pinterestcon.png"></li>
-        </ul>
-    </div>
-    <footer>
+    <footer class="footer">
       <div class="wrapper">
-      <ul class="leftFooterMenu">
-        <li><a href="">Terms and conditions</a></li>
-        <li><a href="">Privacy</a></li>
-      </ul>
-      <ul class="rightFooterMenu">
-      <li><a href=""><img src="../images/facebookIcon1.png"></a></li>
-        <li><a href=""><img src="../images/instagramIcon1.png"></a></li>
-        <li><a href=""><img src="../images/twitterIcon1.png"></a></li>
-        <li>Follow</li>
-      </ul>
+        <li class="footer__leftFooterMenu"><a href="">Terms and conditions</a></li>
+        <li class="footer__leftFooterMenu"><a href="">Privacy</a></li>
+        <div class="footer__share">
+          <li class="footer__share_icon">Follow</li>
+          <li class="footer__share_icon"><a href=""><img src="../images/facebookIcon1.png"></a></li>
+          <li class="footer__share_icon"><a href=""><img src="../images/instagramIcon1.png"></a></li>
+          <li class="footer__share_icon"><a href=""><img src="../images/twitterIcon1.png"></a></li>
+        </div>
       </div>
     </footer>
 </body>

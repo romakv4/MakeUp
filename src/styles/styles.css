@@ -28,7 +28,7 @@ a {
   color: black;
 }
 
-body {
+.body {
   padding: 0;
   margin: 0;
 }
@@ -45,112 +45,59 @@ body {
   clear: both;
 }
 
-.logo{
+.header {
+  height: auto;
+}
+
+.header__logo {
+  display: inline-block;
+  padding-top: 30px;
+  float: left;
   font-family: inconsolata;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   font-size: 30px;
+  width: 50%;
 }
 
-.logo ul {
-  padding: 0;
-}
-
-nav {
+.header__navigation {
   height: 100px;
   float: right;
 }
 
-nav ul {
-  list-style: none;
-}
-
-nav ul li {
-  float: left;
-}
-
-nav ul li a {
+.header__navigation_point {
+  display: inline-block;
   font-size: 14px;
-  padding-top: 60px;
+  padding-top: 40px;
   padding-left: 60px;
   font-family: playfairRegular;
   text-transform: uppercase;
   color: #626262;
 }
 
-.image {
-}
-
-.aboutMe {
-  float: right;
-  margin-top: 45px;
-  width: 272px;
-  height: 200px;
-  background:url(../images/About_me.jpg) no-repeat center;
-}
-
-.aboutMeAbout {
-  font-family: playfairRegular;
-  font-size: 24px;
-  text-transform: uppercase;
-  margin-top: 200px;
-}
-
-.aboutMeText {
-  width: 75%;
-  color: #626262;
-}
-
-.shareAbout {
-  list-style: none;
-  padding: 0;
-}
-
-.shareAbout li {
-  display: inline-block;
-  margin-left: 10px;
-}
-
-.topPostsText {
-  font-family: ubuntu;
-  font-size: 14px;
-  color: #b4ad9e;
-  text-transform: uppercase;
-}
-
-.topPosts {
-  padding-left: 20px;
-}
-.topPosts li {
-  margin-bottom: 15px;
-  font-family: playfairRegular;
-  font-size: 16px;
-  color: #626262;
-}
-.topPosts .desc {
-  font-family: ubuntu;
-  font-size: 12px;
-  display: block;
-  color: #b4ad9e;
-}
-
-.govno {
-  padding: 0 20px;
-  font-family: playfairItalic;
-  font-size: 14px;
-  color: #626262;
-}
-
-article {
+.article {
   float: left;
   width: calc(100% - 272px);
 }
 
-article .article_pad {
-  padding-right: 130px;
+.article__text {
+  float: left;
 }
 
-.photodiary {
+.article__abzac {
+  padding: 0 20px;
+  font-family: playfairItalic;
+  font-size: 14px;
+  color: #626262;
+  width: 650px;
+  list-style: none;
+}
+
+.article__text span {
+  font-family: playfairBlack;
+}
+
+.article__photodiary {
   font-family: ubuntu;
   font-size: 14px;
   text-transform: uppercase;
@@ -158,71 +105,124 @@ article .article_pad {
   color: #626262;
 }
 
-.headOfArticle h1 {
+.article__headOfArticle {
   float: left;
   font-family: playfairRegular;
   font-size: 30px;
-  margin-top: 10px;
 }
 
-.article p {
-  float: left;
+.article__text {
   font-family: playfairRegular;
   font-size: 14px;
   color: #626262;
+  width: 650px;
+  margin-right: 100px;
 }
 
-.article p span {
-  font-family: playfairBlack;
-}
-
-.articleImages img {
+.article__articleImages {
   max-width: 100%;
 }
 
-.shareBottom {
-  text-align: center;
+.aboutMe {
+  display: inline-block;
+  width: 272px;
+  margin-top: 45px;
 }
 
-.shareBottom .shareText {
+.aboutMe__about {
+  margin: 10px 0;
+  list-style: none;
+  font-family: playfairRegular;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #626262;
+}
+
+.aboutMe__text {
+  list-style: none;
+  font-family: playfairRegular;
+  font-size: 12px;
+  color: #626262;
+}
+
+.aboutMe__share {
+  padding: 0;
+}
+
+.aboutMe__share_icon {
+  margin-right: 10px;
+  display: inline-block;
+  font-family: playfairRegular;
+}
+
+.aboutMe__topPostsText {
+  list-style: none;
+  font-family: ubuntu;
+  font-size: 14px;
+  color: #b4ad9e;
+  text-transform: uppercase;
+}
+
+.aboutMe__topPostsHead {
+  margin: 30px 0;
+  color: #b4ad9e;
+}
+
+.aboutMe__topPostsHead_link {
+  font-family: playfairRegular;
+  font-size: 16px;
+  color: #626262;
+}
+
+.aboutMe__topPostsComments {
+  font-family: ubuntu;
+  margin: 0 30px;
+  font-size: 12px;
+  display: block;
+  color: #b4ad9e;
+}
+
+.article__share {
+  float: right;
+  display: block;
+  list-style: none;
+}
+
+.article__share_icon {
+  display: inline-block;
+  margin-left: 10px;
   font-family: ubuntu;
   font-size: 13px;
   text-transform: uppercase;
   color: #b4ad9e;
 }
 
-footer {
+.footer {
   background-color: #d9d9d9;
   width: 100%;
   padding: 40px 0;
 }
 
-.leftFooterMenu {
+.footer__leftFooterMenu {
   list-style: none;
-  display: inline;
-  margin: 0;
+  display: inline-block;
+  font-family: playfairRegular;
+  font-size: 14px;
+  margin: 0 20px;
   padding: 0;
 }
 
-.leftFooterMenu li {
-  display: inline-block;
+.footer__share {
+  float: right;
   margin-right: 15px;
   font-family: playfairRegular;
   font-size: 14px;
 }
 
-.rightFooterMenu {
-  list-style: none;
-  float: right;
+.footer__share_icon {
   display: inline-block;
-  margin: 0;
-  padding: 0;
-}
-
-.rightFooterMenu li {
-  float: right;
-  margin-left: 20px;
-  display: inline-block;
-  font-family: playfairRegular;
+  margin-left: 10px;
+  font-family: ubuntu;
   font-size: 14px;
+  color: #000000;
 }
