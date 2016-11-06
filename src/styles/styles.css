@@ -52,7 +52,6 @@ a {
 .header__logo {
   display: inline-block;
   padding-top: 30px;
-  float: left;
   font-family: inconsolata;
   text-transform: uppercase;
   letter-spacing: 0.2em;
