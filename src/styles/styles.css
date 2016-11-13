@@ -1,4 +1,16 @@
-/*fonts installed to system!*/
+/*The fonts installed on the system,
+but the first step to their connection
+has already been made in the CSS*/
+
+@font-face {
+  font-family:LatoBold;
+  src:url(../fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+  font-family:LatoRegular;
+  src:url(../fonts/Lato-Regular.ttf);
+}
 
 .body {
   background-color: #f7f9fc;
