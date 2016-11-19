@@ -84,7 +84,7 @@ ol, ul {
 
 .navigation a {
   text-transform: uppercase;
-  font: bold 16px Lato, sans-serif;
+  font: 16px LatoBold, sans-serif;
   color: #333333;
 }
 
@@ -104,7 +104,7 @@ ol, ul {
 
 .navigation a:active {
   text-transform: uppercase;
-  font: bold 16px Lato, sans-serif;
+  font: 16px LatoBold, sans-serif;
   color: #5c6bc0;
 }
 
@@ -117,7 +117,7 @@ ol, ul {
   border-left: 2px solid #ccc;
   padding-left: 25px;
   opacity: 0.5;
-  font: 20px Lato sans-seris;
+  font: 20px LatoRegular sans-seris;
   line-height: 30px;
 }
 
@@ -147,7 +147,7 @@ a.disabled {
 
 .date {
   color: #bdbdbd;
-  font: bold 14px Lato, sans-serif;
+  font: 14px LatoBold, sans-serif;
   margin-top: 50px;
   margin-bottom: 25px;
 }
@@ -157,7 +157,7 @@ a.disabled {
   float: right;
   cursor: pointer;
   display: block;
-  width: 90px;
+  width: 100px;
   height: 30px;
   background-color: #5c6bc0;
   border: none;
@@ -188,12 +188,12 @@ a.disabled {
 
 .i-do-button a {
   text-align: center;
-  font: bold 14px Lato, sans-serif;
+  font: 14px LatoBold, sans-serif;
   color: #ffffff;
 }
 
 .head-of-article {
-  font: bold 40px Lato, sans-serif;
+  font: 40px LatoBold, sans-serif;
 }
 
 .separator {
@@ -205,13 +205,13 @@ a.disabled {
 
 .article-desc {
   opacity: 0.5;
-  font: 21px Lato sans-serif;
+  font: 21px LatoRegular sans-serif;
   margin-bottom: 50px;
   line-height: 30px;
 }
 
 .article-text {
-  font: 17px Lato, sans-serif;
+  font: 17px LatoRegular, sans-serif;
   line-height: 30px;
   color: #000000;
   opacity: 0.7;
@@ -226,7 +226,7 @@ a.disabled {
   border: none;
   text-transform: uppercase;
   text-align: center;
-  font: bold 21px Lato, sans-serif;
+  font: 21px LatoBold, sans-serif;
   color: #5c6bc0;
   outline: none;
   text-decoration: none;
@@ -259,7 +259,7 @@ a.disabled {
 
 .hashtags a {
   text-decoration: none;
-  font: bold 15px Lato, sans-serif;
+  font: 15px LatoBold, sans-serif;
   color: #000;
   opacity: 0.3;
 }
@@ -308,7 +308,7 @@ a.disabled {
 
 
 .footer-navigation a {
-  font: bold 16px Lato sans-serif;
+  font: 16px LatoBold sans-serif;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -329,7 +329,7 @@ a.disabled {
 
 .footer-navigation li a:active {
   text-transform: uppercase;
-  font: bold 16px Lato, sans-serif;
+  font: 16px LatoBold, sans-serif;
   color: #ffffff;
 }
 
@@ -350,7 +350,7 @@ a.disabled {
 }
 
 .footer-text {
-  font: 13px Lato, sans-serif;
+  font: 13px LatoRegular, sans-serif;
   color: #fff;
   opacity: 0.5;
   text-align: center;
@@ -360,7 +360,7 @@ a.disabled {
 .footer-text a {
   display: inline-block;
   color: #ffffff;
-  font: bold 14px Lato, sans-serif;
+  font: 14px LatoBold, sans-serif;
 }
 
 .footer-text a:hover {
@@ -372,8 +372,13 @@ a.disabled {
   margin-bottom: 50px;
 }
 
-.social-networks a {
+.social-networks li {
+  display: inline-block;
   margin-right: 20px;
+}
+
+.social-networks a {
+  display: inline-block;
 }
 
 .social-networks a:last-child {

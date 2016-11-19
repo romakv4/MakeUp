@@ -59,6 +59,7 @@ ol, ul {
  input, textarea {
   outline: none;
   padding-left: 20px;
+  padding-right: 20px;
  }
 
 .progress-bar {
@@ -89,7 +90,7 @@ ol, ul {
 
 .navigation a {
   text-transform: uppercase;
-  font: bold 16px Lato, sans-serif;
+  font: 16px LatoBold, sans-serif;
   color: #333333;
 }
 
@@ -109,7 +110,7 @@ ol, ul {
 
 .navigation a:active {
   text-transform: uppercase;
-  font: bold 16px Lato, sans-serif;
+  font: 16px LatoBold, sans-serif;
   color: #5c6bc0;
 }
 
@@ -133,11 +134,11 @@ a.disabled {
 
 .head-of-article {
   margin-top: 80px;
-  font: bold 40px Lato, sans-serif;
+  font: 40px LatoBold, sans-serif;
 }
 
 .article-text {
-  font: 17px Lato, sans-serif;
+  font: 17px LatoRegular, sans-serif;
   margin-top: 40px;
   line-height: 30px;
   color: #000000;
@@ -152,9 +153,9 @@ a.disabled {
 }
 
 .input {
-  font: 17px Lato, sans-serif;
+  font: 17px LatoRegular, sans-serif;
   color: #333333;
-  width: 365px;
+  width: 354px;
   height: 55px;
   border: none;
   background-color: #f7f9fc;
@@ -184,7 +185,7 @@ a.disabled {
   border: none;
   text-transform: uppercase;
   text-align: center;
-  font: bold 21px Lato, sans-serif;
+  font: 21px LatoBold, sans-serif;
   color: #5c6bc0;
   outline: none;
   text-decoration: none;
@@ -233,7 +234,7 @@ a.disabled {
 
 
 .footer-navigation a {
-  font: bold 16px Lato sans-serif;
+  font: 16px LatoBold sans-serif;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -254,7 +255,7 @@ a.disabled {
 
 .footer-navigation li a:active {
   text-transform: uppercase;
-  font: bold 16px Lato, sans-serif;
+  font: 16px LatoBold, sans-serif;
   color: #ffffff;
 }
 
@@ -275,7 +276,7 @@ a.disabled {
 }
 
 .footer-text {
-  font: 13px Lato, sans-serif;
+  font: 13px LatoRegular, sans-serif;
   color: #fff;
   opacity: 0.5;
   text-align: center;
@@ -285,7 +286,7 @@ a.disabled {
 .footer-text a {
   display: inline-block;
   color: #ffffff;
-  font: bold 14px Lato, sans-serif;
+  font: 14px LatoBold, sans-serif;
 }
 
 .footer-text a:hover {
@@ -297,8 +298,13 @@ a.disabled {
   margin-bottom: 50px;
 }
 
-.social-networks a {
+.social-networks li {
+  display: inline-block;
   margin-right: 20px;
+}
+
+.social-networks a {
+  display: inline-block;
 }
 
 .social-networks a:last-child {
