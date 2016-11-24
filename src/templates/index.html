@@ -1,135 +1,80 @@
+{% extends "layout.html" %}
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Frontend course</title>
-  <meta charset="utf-8" />
-
-  <link rel="stylesheet" type="text/css" href="../styles/styles.css">
-
-</head>
 
 <body class="body">
-    <img class="progress-bar" src="../images/progress-bar.png" alt="">
 
-    <div class="header">
-
-    <div class="container clearfix">
-      <div class="logo"><a href="index.html"><img src="../images/palo-alto.png" alt="Logo"></a>
-      </div>
-
-      <ul class="navigation">
-        <li><a href="index.html" class="disabled">home</a></li>
-        <li><a href="#">about</a></li>
-        <li><a href="#">archieve</a></li>
-        <li><a href="indexForms.html">contact</a></li>
-        <li><a href="#"><img class="search"  src="../images/search.png" alt="search"></a></li>
-      </ul>
-
-    </div>
-  </div>
-
+  {% block main %}
   <section class="section">
-    <div class="container clearfix">
+
       <article class="article">
-        <ul class="margin-container">
-          <button class="i-do-button"><a href="#">I Do Travel</a></button>
-          <li class="date">Sep 20</li>
-          <li><h1 class="head-of-article">No difference how many peaks you reach if there was no pleasure in the climb.</h1></li>
-          <hr class="separator">
-          <li class="article-text">Quisque congue lacus mattis massa luctus, nec hendrerit purus aliquet. Ut ac elementum urna. Pellentesque suscipit metus et egestas congue. Duis eu pellentesque turpis, ut maximus metus. Sed ultrices tellus vitae rutrum congue. Fusce luctus augue id nisl suscipit, vel sollicitudin orci egestas. Morbi posuere venenatis ipsum, ac vestibulum quam dignissim efficitur. Ut vitae rutrum augue, in volutpat quam. Cras a viverra ipsum. Aenean ut consequat ex, vitae vulputate nunc. Vestibulum metus nisi, aliquam sed tincidunt sit amet, pretium et augue.
+        <ul class="container clearfix">
+          <button class="article__i-do-button"><a href="#">I Do Travel</a></button>
+          <li class="article__date">Sep 20</li>
+          <li><h1 class="article__head-of-article">No difference how many peaks you reach if there was no pleasure in the climb.</h1></li>
+          <hr class="article__separator">
+          <li class="article__article-text">Quisque congue lacus mattis massa luctus, nec hendrerit purus aliquet. Ut ac elementum urna. Pellentesque suscipit metus et egestas congue. Duis eu pellentesque turpis, ut maximus metus. Sed ultrices tellus vitae rutrum congue. Fusce luctus augue id nisl suscipit, vel sollicitudin orci egestas. Morbi posuere venenatis ipsum, ac vestibulum quam dignissim efficitur. Ut vitae rutrum augue, in volutpat quam. Cras a viverra ipsum. Aenean ut consequat ex, vitae vulputate nunc. Vestibulum metus nisi, aliquam sed tincidunt sit amet, pretium et augue.
           </li>
-          <div>
-          <button class="read-more"><a href="#"></a>read more</button>
-            <ul class="hashtags">
-              <li><a href="#">#Yosemite</li></a>
-              <li><a href="#">#Peak</li></a>
-              <li><a href="#">#Explorer</li></a>
+          <div class="article-footer">
+          <button class="article-footer__read-more"><a href="#"></a>read more</button>
+            <ul class="article-footer-hashtags">
+              <li class="article-footer-hashtags__tags"><a href="#">#Yosemite</li></a>
+              <li class="article-footer-hashtags__tags"><a href="#">#Peak</li></a>
+              <li class="article-footer-hashtags__tags"><a href="#">#Explorer</li></a>
             </ul>
           </div>
         </ul>
       </article>
 
-    <div class="cover-image article">
-      <img class="cover-image" src="../images/article-image1.jpg" alt="cover of article"><a href=""></a></img>
-    </div>
+      <div class="container">
+          <img class="cover-image" src="../images/article-image1.jpg" alt=" cover of article"><a href=""></a></img>
+        </div>
       <article class="article">
-        <ul class="margin-container">
-          <button class="i-do-button"><a href="#">I Do Observe</a></button>
-          <li class="date">Sep 18</li>
-          <li><h1 class="head-of-article">You know, I'd rather argue with you, then laugh with anyone else. </h1></li>
-          <hr class="separator">
-          <li class="article-desc">Curabitur luctus placerat lorem id eleifend. Nulla ac lacus finibus, tempor velit hendrerit, vulputate lacus. Nunc fermentum nunc sem, ac eleifend tellus cursus nec. Donec a euismod est, vitae accumsan purus. Proin aliquet ex massa, ac finibus magna commodo vitae.</li>
-          <li class="article-text">Quisque congue lacus mattis massa luctus, nec hendrerit purus aliquet. Ut ac elementum urna. Pellentesque suscipit metus et egestas congue. Duis eu pellentesque turpis, ut maximus metus. Sed ultrices tellus vitae rutrum congue. Fusce luctus augue id nisl suscipit, vel sollicitudin orci egestas. Morbi posuere venenatis ipsum, ac vestibulum quam dignissim efficitur. Ut vitae rutrum augue, in volutpat quam. Cras a viverra ipsum. Aenean ut consequat ex, vitae vulputate nunc. Vestibulum metus nisi, aliquam sed tincidunt sit amet, pretium et augue.
+        <ul class="container clearfix">
+          <button class="article__i-do-button"><a href="#">I Do Observe</a></button>
+          <li class="article__date">Sep 18</li>
+          <li><h1 class="article__head-of-article">You know, I'd rather argue with you, then laugh with anyone else. </h1></li>
+          <hr class="article__separator">
+          <li class="article__article-desc">Curabitur luctus placerat lorem id eleifend. Nulla ac lacus finibus, tempor velit hendrerit, vulputate lacus. Nunc fermentum nunc sem, ac eleifend tellus cursus nec. Donec a euismod est, vitae accumsan purus. Proin aliquet ex massa, ac finibus magna commodo vitae.</li>
+          <li class="article__article-text">Quisque congue lacus mattis massa luctus, nec hendrerit purus aliquet. Ut ac elementum urna. Pellentesque suscipit metus et egestas congue. Duis eu pellentesque turpis, ut maximus metus. Sed ultrices tellus vitae rutrum congue. Fusce luctus augue id nisl suscipit, vel sollicitudin orci egestas. Morbi posuere venenatis ipsum, ac vestibulum quam dignissim efficitur. Ut vitae rutrum augue, in volutpat quam. Cras a viverra ipsum. Aenean ut consequat ex, vitae vulputate nunc. Vestibulum metus nisi, aliquam sed tincidunt sit amet, pretium et augue.
           </li>
-          <div>
-          <button class="read-more"><a href="#"></a>read more</button>
-            <ul class="hashtags">
-              <li><a href="#">#Yosemite</li></a>
-              <li><a href="#">#Peak</li></a>
-              <li><a href="#">#Photo</li></a>
+          <div class="article-footer">
+          <button class="article-footer__read-more"><a href="#"></a>read more</button>
+            <ul class="article-footer-hashtags">
+              <li class="article-footer-hashtags__tags"><a href="#">#Yosemite</li></a>
+              <li class="article-footer-hashtags__tags"><a href="#">#Peak</li></a>
+              <li class="article-footer-hashtags__tags"><a href="#">#Photo</li></a>
             </ul>
           </div>
         </ul>
       </article>
 
       <article class="article">
-        <ul class="margin-container">
-          <button class="i-do-button"><a href="#">I Do Reflect</a></button>
-          <li class="date">Sep 11</li>
-          <li><h1 class="head-of-article">Democracy means simply the bludgeoning of the people by the people for the people.</h1></li>
-          <hr class="separator">
+        <ul class="container clearfix">
+          <button class="article__i-do-button"><a href="#">I Do Reflect</a></button>
+          <li class="article__date">Sep 11</li>
+          <li><h1 class="article__head-of-article">Democracy means simply the bludgeoning of the people by the people for the people.</h1></li>
+          <hr class="article__separator">
           <img class="left" src="../images/article-image2.jpg" alt="">
-          <li class="article-text">Quisque congue lacus mattis massa luctus, nec hendrerit purus aliquet. Ut ac elementum urna. Pellentesque suscipit metus et egestas congue. Duis eu pellentesque turpis, ut maximus metus. Sed ultrices tellus vitae rutrum congue. Fusce luctus augue id nisl suscipit, vel sollicitudin orci egestas. Morbi posuere venenatis ipsum, ac vestibulum quam dignissim efficitur. Ut vitae rutrum augue, in volutpat quam. Cras a viverra ipsum. Aenean ut consequat ex, vitae vulputate nunc. Vestibulum metus nisi, aliquam sed tincidunt sit amet, pretium et augue.
+          <li class="article__article-text">Quisque congue lacus mattis massa luctus, nec hendrerit purus aliquet. Ut ac elementum urna. Pellentesque suscipit metus et egestas congue. Duis eu pellentesque turpis, ut maximus metus. Sed ultrices tellus vitae rutrum congue. Fusce luctus augue id nisl suscipit, vel sollicitudin orci egestas. Morbi posuere venenatis ipsum, ac vestibulum quam dignissim efficitur. Ut vitae rutrum augue, in volutpat quam. Cras a viverra ipsum. Aenean ut consequat ex, vitae vulputate nunc. Vestibulum metus nisi, aliquam sed tincidunt sit amet, pretium et augue.
           <p>Mauris sem odio, rhoncus eget euismod sed, pellentesque sit amet felis. Praesent dictum eleifend dui et efficitur. Nunc non orci in neque sodales semper. Etiam euismod volutpat lorem, <a class="intext-link" href="">vestibulum malesuada</a> justo aliquet eget. Nunc lacus ante, varius a euismod eu, finibus commodo erat. Curabitur tincidunt sit amet nunc id interdum. Aliquam augue nisi, venenatis vitae ex at, lobortis fringilla nibh. Proin placerat enim vitae egestas eleifend. Aliquam quis orci dignissim, posuere nibh a, eleifend augue. Cras quis metus nec tortor aliquet ullamcorper. Quisque varius porta metus, ut maximus dolor euismod nec. Suspendisse sit amet feugiat turpis.</p>
           </li>
           <p>
             <li class="line">Curabitur ut leo pulvinar, consectetur magna eu, feugiat purus. Morbi hendrerit<br />lectus turpis, a porttitor velit imperdiet id.</li>
           </p>
-          <li class="article-text">Nunc placerat dolor at lectus hendrerit dignissim. Ut tortor sem, consectetur nec hendrerit ut, ullamcorper ac odio. Donec viverra ligula at quam tincidunt imperdiet. Nulla mattis tincidunt auctor. Nullam scelerisque ante mauris, egestas commodo nisi gravida ultrices. Suspendisse dapibus feugiat tincidunt. Aliquam gravida quam at ipsum sagittis bibendum.</li>
-          <div>
-          <button class="read-more"><a href="#"></a>read more</button>
-            <ul class="hashtags">
-              <li><a href="#">#Democracy</li></a>
-              <li><a href="#">#Introspection</li></a>
+          <li class="article__article-text">Nunc placerat dolor at lectus hendrerit dignissim. Ut tortor sem, consectetur nec hendrerit ut, ullamcorper ac odio. Donec viverra ligula at quam tincidunt imperdiet. Nulla mattis tincidunt auctor. Nullam scelerisque ante mauris, egestas commodo nisi gravida ultrices. Suspendisse dapibus feugiat tincidunt. Aliquam gravida quam at ipsum sagittis bibendum.</li>
+          <div class="article-footer">
+          <button class="article-footer__read-more"><a href="#"></a>read more</button>
+            <ul class="article-footer-hashtags">
+              <li class="article-footer-hashtags__tags"><a href="#">#Democracy</li></a>
+              <li class="article-footer-hashtags__tags"><a href="#">#Introspection</li></a>
             </ul>
           </div>
         </ul>
       </article>
-
     </div>
-
   </section>
-
-  <footer class="footer">
-    <ul class="footer-margin-container">
-      <li class="footer-logo"><img src="../images/palo-alto.png"></li>
-      <div class="footer-navigation">
-        <li><a href="" class="disabled">home</a></li>
-        <li><a href="#">about</a></li>
-        <li><a href="#">archieve</a></li>
-        <li><a href="#">contact</a></li>
-        <li><a href="#"><img src="../images/footer-search.png" alt="search"></a></li>
-      </div>
-      <hr class="footer-separator">
-      <li class="footer-text">Nunc placerat dolor at lectus hendrerit dignissim. Ut tortor sem, consectetur nec hendrerit ut, ullamcorper ac odio. Donec viverra ligula at quam tincidunt imperdiet. Nulla mattis tincidunt auctor.</li>
-      <hr class="footer-separator">
-      <li class="footer-text">© 2015 - Palo Alto. All Rights Reserved. Designed & Developed by <a href="#">PixelBuddha Team</a></li>
-      <ul class="social-networks">
-        <li>
-            <a href="#"><img src="../images/instagram.png" alt=""></a>
-        </li>
-        <li>
-          <a href="#"><img src="../images/facebook.png" alt=""></a>
-        </li>
-        <li>
-          <a href="#"><img src="../images/pinterest.png" alt=""></a>
-        </li>
-        <li>
-          <a href="#"><img src="../images/twitter.png" alt=""></a>
-        </li>
-      </ul>
-    </ul>
-  </footer>
+  {% endblock %}
 
 </body>
 </html>

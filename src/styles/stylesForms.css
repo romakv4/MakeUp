@@ -12,133 +12,13 @@ has already been made in the CSS*/
   src:url(../fonts/Lato-Regular.ttf);
 }
 
-.body {
-  background-color: #f7f9fc;
-  margin: 0 auto;
-}
-
-.container {
-  width:960px; margin: 0 auto;
-}
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-}
-
-a {
-  text-decoration: none;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-}
-
-ol, ul {
-  list-style: none;
-}
-
- p {
-  margin-top: 30px;
- }
-
- input, textarea {
-  outline: none;
-  padding-left: 20px;
-  padding-right: 20px;
- }
-
-.progress-bar {
-  position: absolute;
-}
-
-.header {
-  padding: 80px 0;
-}
-
-.logo {
-  float: left;
-}
-
-.navigation {
-  float: right;
-  padding-top: 10px;
-}
-
-.navigation li {
-  float: left;
-  margin-right: 35px;
-}
-
-.navigation li:last-child {
-  margin-right: 0;
-}
-
-.navigation a {
-  text-transform: uppercase;
-  font: 16px LatoBold, sans-serif;
-  color: #333333;
-}
-
-.navigation a:after {
-    display: block;
-    content: "";
-    height: 2px;
-    width: 0%;
-    background-color: #5c6bc0;
-    transition: width 0.7s ease-in-out;
-}
-
-.navigation a:hover:after,
-.navigation a:focus:after {
-    width: 100%;
-}
-
-.navigation a:active {
-  text-transform: uppercase;
-  font: 16px LatoBold, sans-serif;
-  color: #5c6bc0;
-}
-
-a.disabled {
-    pointer-events: none;
-    cursor: default;
-    color: #bdbdbd;
-}
-
-.container-for-content {
-  background-color: #ffffff;
-  margin-top: 0px;
-  margin-bottom: 50px;
-  display: flex;
-  box-shadow: 0 0 50px rgba(0,0,0,0.2);
-}
-
-.margin-container {
-  margin: 0 100px;
-}
-
-.head-of-article {
+.article__head-of-article_contact {
   margin-top: 80px;
-  font: 40px LatoBold, sans-serif;
+  font: 40px LatoBold, serif;
 }
 
 .article-text {
-  font: 17px LatoRegular, sans-serif;
+  font: 17px LatoRegular, serif;
   margin-top: 40px;
   line-height: 30px;
   color: #000000;
@@ -152,23 +32,28 @@ a.disabled {
   margin: 40px 0;
 }
 
-.input {
-  font: 17px LatoRegular, sans-serif;
+.form__input {
+  font: 17px LatoRegular, serif;
   color: #333333;
-  width: 354px;
+  width: 337px;
   height: 55px;
   border: none;
   background-color: #f7f9fc;
   margin-bottom: 30px;
+  padding: 0 20px;
 }
 
-.input-subject {
-  width: 754px;
+.form__input:active {
+  border: none;
 }
 
-.input-message {
-  width: 754px;
-  max-width: 754px;
+.form__input-subject {
+  width: 720px;
+}
+
+.form__input-message {
+  width: 720px;
+  max-width: 720px;
   height: 150px;
 }
 
@@ -176,7 +61,7 @@ a.disabled {
   padding-top: 20px;
 }
 
-.send-message {
+.form__send-message {
   cursor: pointer;
   display: inline-block;
   width: 180px;
@@ -185,7 +70,7 @@ a.disabled {
   border: none;
   text-transform: uppercase;
   text-align: center;
-  font: 21px LatoBold, sans-serif;
+  font: 21px LatoBold, serif;
   color: #5c6bc0;
   outline: none;
   text-decoration: none;
@@ -193,11 +78,11 @@ a.disabled {
   margin-left: -10px;
 }
 
-.send-message:hover {
+.form__send-message:hover {
   border: 2px solid #f1f1f1;
 }
 
-.send-message:active {
+.form__send-message:active {
   border: 2px solid #7d89cd;
 }
 
@@ -234,7 +119,7 @@ a.disabled {
 
 
 .footer-navigation a {
-  font: 16px LatoBold sans-serif;
+  font: 16px LatoBold, serif;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -254,13 +139,7 @@ a.disabled {
 }
 
 .footer-navigation li a:active {
-  text-transform: uppercase;
-  font: 16px LatoBold, sans-serif;
   color: #ffffff;
-}
-
-.footer-navigation .disabled {
-  opacity: 0.5;
 }
 
 .footer-separator {
@@ -276,7 +155,7 @@ a.disabled {
 }
 
 .footer-text {
-  font: 13px LatoRegular, sans-serif;
+  font: 13px LatoRegular, serif;
   color: #fff;
   opacity: 0.5;
   text-align: center;
@@ -286,27 +165,15 @@ a.disabled {
 .footer-text a {
   display: inline-block;
   color: #ffffff;
-  font: 14px LatoBold, sans-serif;
+  font: 14px LatoBold, serif;
 }
 
 .footer-text a:hover {
   text-decoration: underline;
 }
 
-.social-networks {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.social-networks li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-.social-networks a {
-  display: inline-block;
-}
-
-.social-networks a:last-child {
-  margin-right: 0;
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+    color: #bdbdbd;
 }

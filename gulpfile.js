@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var nunjucks = require('gulp-nunjucks');
+var concat = require('gulp-concat');
 var browserSync = require('browser-sync').create();
 
 var path = {
@@ -36,6 +37,12 @@ gulp.task('images', function(){
 gulp.task('fonts', function(){
   return gulp.src(path.fonts)
   .pipe(gulp.dest(path.dist.fonts));
+});
+
+gulp.task('css', function () {
+  return gulp.src(path.css)
+    .pipe(concat('styles.css'))
+    .pipe(gulp.dest(path.dist.css));
 });
 
 gulp.task('build', ['html', 'css', 'images', 'fonts']);
