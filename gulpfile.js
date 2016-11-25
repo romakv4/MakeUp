@@ -13,7 +13,6 @@ var path = {
       css: 'src/vendor/css/*.css',
     },
     build: {
-      css_min: 'build/styles_min/',
       css:  'build/styles/',
       images: 'build/images/',
       fonts: 'build/fonts/',
@@ -62,38 +61,38 @@ gulp.task('fonts', function(){
 });
 
 /*Production minification*/
-gulp.task('html', function () {
+gulp.task('htmlProd', function () {
   return gulp.src(path.html)
     .pipe(nunjucks.compile())
     .pipe(gulp.dest(path.prod.html));
 });
 
-gulp.task('css-min', function () {
+gulp.task('css-minProd', function () {
   return gulp.src(path.css)
     .pipe(concat('styles.css'))
     .pipe(cssmin())
     .pipe(gulp.dest(path.prod.css));
 });
 
-gulp.task('vendor-css-min', function () {
+gulp.task('vendor-css-minProd', function () {
   return gulp.src(path.vendor.css)
     .pipe(concat('vendor.css'))
     .pipe(cssmin())
     .pipe(gulp.dest(path.prod.vendor));
 });
 
-gulp.task('images', function(){
+gulp.task('imagesProd', function(){
   return gulp.src(path.images)
   .pipe(gulp.dest(path.prod.images));
 });
 
-gulp.task('fonts', function(){
+gulp.task('fontsProd', function(){
   return gulp.src(path.fonts)
   .pipe(gulp.dest(path.prod.fonts));
 });
 
 gulp.task('build', ['html', 'css', 'vendor-css', 'images', 'fonts']);
-gulp.task('prod', ['html', 'css-min', 'vendor-css-min', 'images', 'fonts']);
+gulp.task('prod', ['htmlProd', 'css-minProd', 'vendor-css-minProd', 'imagesProd', 'fontsProd']);
 
 gulp.task('watch', function () {
   gulp.watch(path.css, ['css']);
@@ -108,6 +107,6 @@ gulp.task('serve', ['watch'], function() {
     server: {
       baseDir: path.build.html
     }
-  });
+  })
   gulp.watch('build/**').on('change', browserSync.reload);
 });

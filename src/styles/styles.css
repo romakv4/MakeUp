@@ -18,7 +18,7 @@ has already been made in the CSS*/
 }
 
 .container {
-  width:960px;
+  width: 960px;
   margin: 0 auto;
 }
 
@@ -32,12 +32,8 @@ has already been made in the CSS*/
   clear: both;
 }
 
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
+.paddings { /* Вспомогательная штука */
+  padding: 0 100px;
 }
 
 a {
@@ -134,21 +130,17 @@ a.disabled {
   margin-bottom: 50px;
   margin-left: 100px;
   margin-right: 100px;
-  padding: 0 100px;
-  display: flex;
   box-shadow: 0 0 50px rgba(0,0,0,0.2);
 }
 
-.cover-image {
-  width: 970px;
-  height: 580px;
-  margin-bottom: 0;
+.article__cover-image {
+  width: 100%;
 }
 
 .article__date {
   color: #bdbdbd;
   font: 14px LatoBold, serif;
-  margin-top: 50px;
+  padding-top: 50px;
   margin-bottom: 25px;
 }
 
