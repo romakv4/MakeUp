@@ -140,7 +140,7 @@ a.disabled {
 }
 
 .cover-image {
-  width: 960px;
+  width: 970px;
   height: 580px;
   margin-bottom: 0;
 }
@@ -366,4 +366,3 @@ a.disabled {
 .footer__text a:hover {
   text-decoration: underline;
 }
-

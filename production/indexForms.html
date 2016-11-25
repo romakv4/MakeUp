@@ -30,8 +30,24 @@
     </div>
   </div>
 
-{% block main %}
-{% endblock %}
+
+    <div class="article">
+        <ul class="container clearfix">
+        <li><h1 class="article__head-of-article_contact">Contact Us</h1></li>
+        <li class="article__article-text">Nam in maximus arcu, ac aliquam tellus. Donec vestibulum ipsum nunc, at placerat ante posuere non. Integer at dui a lacus suscipit elementum id non massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc eu neque eros. Ut eu quam justo.</li>
+        <hr class="article__separator">
+        <form class="form" action="index.html">
+            <input class="form__input" type="text" maxlength="15" placeholder="Your Name" name="">
+          <input class="form__input" type="text" maxlength="20" placeholder="E-Mail" name="">
+          <input class="form__input form__input-subject" maxlength="40" type="text" placeholder="Subject" name="">
+          <textarea class ="form__input form__input-message" maxlength="600" placeholder="Your Message"></textarea>
+        <div>
+        <input type="form__submit" value="send message" class="form__send-message"><a href="#"></a></input>
+        </div>
+        </form>
+      </ul>
+    </div>
+    
 
 <footer class="footer">
     <ul class="margin-container_footer">
