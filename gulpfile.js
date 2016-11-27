@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var nunjucks = require('gulp-nunjucks');
 var concat = require('gulp-concat');
 var cssmin = require('gulp-cssmin');
+var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync').create();
 
 var path = {
@@ -29,7 +30,7 @@ var path = {
     }
 };
 
-gulp.task('default', ['build', 'prod', 'serve', 'watch']);
+gulp.task('default', ['build', 'serve', 'watch']);
 
 /*Build for me*/
 gulp.task('html', function () {
@@ -40,6 +41,9 @@ gulp.task('html', function () {
 
 gulp.task('css', function () {
   return gulp.src(path.css)
+    .pipe(autoprefixer({
+      browsers: ['last 4 versions']
+  }))
     .pipe(concat('styles.css'))
     .pipe(gulp.dest(path.build.css));
 });
@@ -69,6 +73,9 @@ gulp.task('htmlProd', function () {
 
 gulp.task('css-minProd', function () {
   return gulp.src(path.css)
+    .pipe(autoprefixer({
+        browsers: ['last 4 versions']
+  }))
     .pipe(concat('styles.css'))
     .pipe(cssmin())
     .pipe(gulp.dest(path.prod.css));
@@ -107,6 +114,6 @@ gulp.task('serve', ['watch'], function() {
     server: {
       baseDir: path.build.html
     }
-  })
+  });
   gulp.watch('build/**').on('change', browserSync.reload);
 });

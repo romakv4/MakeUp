@@ -20,7 +20,7 @@ has already been made in the CSS*/
 .form__input {
   font: 17px LatoRegular, serif;
   color: #333333;
-  width: 382px;
+  width: 378px;
   height: 55px;
   border: none;
   background-color: #f7f9fc;
@@ -71,10 +71,6 @@ has already been made in the CSS*/
   border: 2px solid #7d89cd;
 }
 
-.footer-margin-container {
-  margin: 0 320px;
-}
-
 .footer {
   display: flex;
   background-color: #5c6bc0;
@@ -86,79 +82,4 @@ has already been made in the CSS*/
   text-align: center;
   opacity: 0.2;
   padding: 65px 0;
-}
-
-.footer-navigation {
-  width: 100%;
-  text-align: center;
-}
-
-.footer-navigation li {
-  margin-right: 40px;
-  display: inline-block;
-}
-
-.footer-navigation li:last-child {
-  margin-right: 0;
-}
-
-
-.footer-navigation a {
-  font: 16px LatoBold, serif;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.footer-navigation li a:after {
-    display: block;
-    content: "";
-    height: 2px;
-    width: 0%;
-    background-color: #ffffff;
-    transition: width 0.7s ease-in-out;
-}
-
-.footer-navigation li a:hover:after,
-.footer-navigation li a:focus:after {
-    width: 100%;
-}
-
-.footer-navigation li a:active {
-  color: #ffffff;
-}
-
-.footer-separator {
-  border: none;
-  height: 2px;
-  background-color: #000000;
-  margin: 40px 0px;
-  opacity: 0.1;
-}
-
-.fourth-line-footer {
-  margin: 0 20px;
-}
-
-.footer-text {
-  font: 13px LatoRegular, serif;
-  color: #fff;
-  opacity: 0.5;
-  text-align: center;
-  margin-bottom: 35px;
-}
-
-.footer-text a {
-  display: inline-block;
-  color: #ffffff;
-  font: 14px LatoBold, serif;
-}
-
-.footer-text a:hover {
-  text-decoration: underline;
-}
-
-a.disabled {
-    pointer-events: none;
-    cursor: default;
-    color: #bdbdbd;
 }

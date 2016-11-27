@@ -53,6 +53,12 @@ ol, ul {
   margin-top: 30px;
  }
 
+.disabled-link {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.5;
+}
+
 .progress-bar {
   position: absolute;
 }
@@ -63,6 +69,7 @@ ol, ul {
 
 .logo {
   float: left;
+  border: none;
 }
 
 .navigation {
@@ -118,18 +125,10 @@ ol, ul {
   line-height: 30px;
 }
 
-a.disabled {
-    pointer-events: none;
-    cursor: default;
-    color: #bdbdbd;
-}
-
 .article {
   background-color: #ffffff;
   margin-top: 0px;
   margin-bottom: 50px;
-  margin-left: 100px;
-  margin-right: 100px;
   box-shadow: 0 0 50px rgba(0,0,0,0.2);
 }
 
@@ -146,9 +145,7 @@ a.disabled {
 
 .article__i-do-button {
   position: absolute;
-  float: right;
   cursor: pointer;
-  display: block;
   width: 100px;
   height: 30px;
   background-color: #5c6bc0;
@@ -186,6 +183,10 @@ a.disabled {
 
 .article__head-of-article {
   font: 40px LatoBold, serif;
+}
+
+.article__image {
+  float: left;
 }
 
 .article__separator {
@@ -325,20 +326,12 @@ a.disabled {
   color: #ffffff;
 }
 
-.navigation__link_footer .disabled {
-  opacity: 0.5;
-}
-
 .footer__separator {
   border: none;
   height: 2px;
   background-color: #000000;
   margin: 40px 0px;
   opacity: 0.1;
-}
-
-.fourth-line-footer {
-  margin: 0 20px;
 }
 
 .footer__text {

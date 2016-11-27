@@ -7,8 +7,8 @@
 
   <link rel="shortcut icon" href="../images/favicon32x32.ico" sizes="32x32"/>
   <link rel="shortcut icon" href="../images/favicon16x16.ico" sizes="16x16"/>
-  <link rel="stylesheet" type="text/css" href="../vendor/css/normalize.css"/>
   <link rel="stylesheet" type="text/css" href="../styles/styles.css"/>
+  <link rel="stylesheet" type="text/css" href="../vendor/vendor.css"/>
 
 </head>
 
@@ -17,13 +17,14 @@
      <div class="header">
     <div class="container clearfix">
       <div class="logo"><a href="index.html"><img src="../images/palo-alto.png" alt="Logo"></a>
+
       </div>
 
       <ul class="navigation">
-        <li class="navigation__link"><a href="index.html" class="disabled">home</a></li>
-        <li class="navigation__link"><a href="#">about</a></li>
-        <li class="navigation__link"><a href="#">archieve</a></li>
-        <li class="navigation__link"><a href="indexForms.html">contact</a></li>
+        <li {% if navInactiveItem == 1 %} class="navigation__link disabled-link" {% else %} class="navigation__link" {% endif %}><a href="index.html">home</a></li>
+        <li {% if navInactiveItem == 2 %} class="navigation__link disabled-link" {% else %} class="navigation__link" {% endif %}><a href="#">about</a></li>
+        <li {% if navInactiveItem == 3 %} class="navigation__link disabled-link" {% else %} class="navigation__link" {% endif %}><a href="#">archieve</a></li>
+        <li {% if navInactiveItem == 4 %} class="navigation__link disabled-link" {% else %} class="navigation__link" {% endif %}><a href="indexForms.html">contact</a></li>
         <li class="navigation__link"><a href="#"><img class="search"  src="../images/search.png" alt="search"></a></li>
       </ul>
 
@@ -38,10 +39,10 @@
       <li class="footer-logo"><img src="../images/palo-alto.png"></li>
       <div>
         <ul class="navigation_footer">
-          <li class="navigation__link_footer"><a href="index.html" class="disabled">home</a></li>
-          <li class="navigation__link_footer"><a href="#">about</a></li>
-          <li class="navigation__link_footer"><a href="#">archieve</a></li>
-          <li class="navigation__link_footer"><a href="indexForms.html">contact</a></li>
+          <li {% if navInactiveItem == 1 %} class="navigation__link_footer disabled-link" {% else %} class="navigation__link_footer" {% endif %}><a href="index.html" class="disabled">home</a></li>
+          <li {% if navInactiveItem == 2 %} class="navigation__link_footer disabled-link" {% else %} class="navigation__link_footer" {% endif %}><a href="#">about</a></li>
+          <li {% if navInactiveItem == 3 %} class="navigation__link_footer disabled-link" {% else %} class="navigation__link_footer" {% endif %}><a href="#">archieve</a></li>
+          <li {% if navInactiveItem == 4 %} class="navigation__link_footer disabled-link" {% else %} class="navigation__link_footer" {% endif %}><a href="indexForms.html">contact</a></li>
           <li class="navigation__link_footer"><a href="#"><img class="search"  src="../images/search.png" alt="search"></a></li>
         </ul>
       </div>
