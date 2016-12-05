@@ -1,24 +1,14 @@
-/*The fonts installed on the system,
-but the first step to their connection
-has already been made in the CSS*/
 
-@font-face {
-  font-family:LatoBold;
-  src:url(../fonts/Lato-Bold.ttf);
-}
-
-@font-face {
-  font-family:LatoRegular;
-  src:url(../fonts/Lato-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css?family=Lato:italic, bold');
 
 .article__head-of-article_contact {
   padding-top: 80px;
-  font: 40px LatoBold, serif;
+  font: 40px 'Lato', serif;
+  font-weight: bold;
 }
 
 .form__input {
-  font: 17px LatoRegular, serif;
+  font: 17px 'Lato', serif;
   color: #333333;
   width: 378px;
   height: 55px;
@@ -55,7 +45,8 @@ has already been made in the CSS*/
   border: none;
   text-transform: uppercase;
   text-align: center;
-  font: 21px LatoBold, serif;
+  font: 21px 'Lato', serif;
+  font-weight: bold;
   color: #5c6bc0;
   outline: none;
   text-decoration: none;
@@ -82,4 +73,50 @@ has already been made in the CSS*/
   text-align: center;
   opacity: 0.2;
   padding: 65px 0;
+}
+
+@media screen and (max-width: 480px) {
+
+.container {
+  width: 450px;
+  margin: 0 auto;
+}
+
+.paddings { /* Вспомогательная штука */
+  padding: 0 50px;
+}
+
+.form__input {
+  font: 17px 'Lato', serif;
+  color: #333333;
+  width: 350px;
+  height: 55px;
+  border: none;
+  background-color: #f7f9fc;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+.container {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.paddings { /* Вспомогательная штука */
+  padding: 0 25px;
+}
+
+.form__input {
+  font: 17px 'Lato', serif;
+  color: #333333;
+  width: 230px;
+  height: 55px;
+  border: none;
+  background-color: #f7f9fc;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  }
 }
