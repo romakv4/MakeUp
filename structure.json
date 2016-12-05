@@ -1,0 +1,36 @@
+{
+  {
+    "date": "sep 20",
+    "i-do-button": "i do travel",
+    "image": "image1.jpg",
+    "image2x": "image12x.jpg",
+    "head-of-article": "No difference how many peaks you reach if there was no pleasure in the climb",
+    "article-desc": "",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia ipsa atque deleniti nobis optio, aliquid nesciunt voluptatem laboriosam eius at in nam facere, earum ad minus voluptate similique. Nihil velit voluptate saepe ab illum eligendi nemo ipsa dolorem dolor et sequi impedit, voluptas itaque enim consequuntur quod molestias repudiandae debitis earum perspiciatis facere ipsam asperiores excepturi cumque. Reprehenderit laborum voluptatum ut. Doloremque, rerum facilis quae numquam reprehenderit atque veritatis modi voluptatibus voluptatem nobis quam, quia.",
+    "tags": ["Yosemite", "Peak", "Explorer"]
+  },
+  {
+    "date": "sep 18",
+    "i-do-button": "i do observe",
+    "image": "article-image1.jpg",
+    "image2x": "article-image1-2x.jpg",
+    "head-of-article": "You know, I'd rather argue with you, then laugh with anyone else",
+    "article-desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis debitis rem aut placeat reiciendis recusandae nihil, maxime, illo inventore quia modi distinctio error! Accusantium, tenetur. Autem esse fuga obcaecati mollitia! Consequuntur, illum. Quaerat, quod, voluptas!",
+    "text": ["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium optio nulla aliquam ratione, atque labore quos enim assumenda minus repellendus voluptate hic recusandae quasi commodi eos, ipsum nesciunt. Tempora quidem ducimus quisquam odit, reprehenderit facere tenetur enim, ipsam recusandae eos consequatur saepe excepturi repellendus maiores provident aperiam nesciunt iusto quas, mollitia quam itaque. Iure vero magnam, nostrum labore recusandae laudantium modi aliquid, facilis sit saepe sint magni totam ad voluptates cumque obcaecati cum quisquam pariatur cupiditate officiis hic.",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus accusamus neque deleniti laboriosam illum harum unde illo reiciendis, ratione voluptatum error praesentium nisi blanditiis possimus omnis sint dolores porro. Minus autem fugit recusandae, consequuntur quaerat maxime nostrum quia odit nisi."],
+    "hashtags": ["Yosemite", "Peak", "Photo"]
+  },
+  {
+    "date": "sep 11",
+    "i-do-button": "i do reflect",
+    "image": "article-image2.jpg",
+    "image2x": "article-image2-2x.jpg",
+    "head-of-article": "Democracy means simply the bludgeoning of the people by the people for the people",
+    "article-desc": "Curabitur luctus placerat lorem id eleifend. Nulla ac lacus finibus, tempor velit hendrerit, vulputate lacus. Nunc fermentum nunc sem, ac eleifend tellus cursus nec. Donec a euismod est, vitae accumsan purus. Proin aliquet ex massa, ac finibus magna commodo vitae.",
+    "text": ["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi nam pariatur, necessitatibus quod veniam suscipit nostrum velit similique enim sit. Id eveniet architecto dolorum inventore commodi veritatis sunt a itaque ratione, in repudiandae, dolor rem? Voluptatum ducimus inventore reprehenderit, sint culpa consequatur possimus perferendis enim nam accusamus, velit. Similique dicta, nisi amet placeat! Ea et consequuntur reiciendis quaerat cupiditate, ipsa iusto est totam provident voluptate modi commodi, cum sapiente recusandae, eos aut quidem aliquam quae autem repellat tempora expedita consectetur.",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quidem obcaecati enim optio deserunt sunt facere, tempore eveniet voluptatibus illum mollitia. Vel maiores praesentium minus deleniti. Error, voluptates omnis a et aliquid neque doloremque, in laudantium. Vel et, necessitatibus similique labore assumenda. Optio qui beatae eius, dolore. Facilis sunt iure voluptatum officia ut, doloremque, corporis nesciunt voluptate illo provident perferendis minus tempore nulla, molestiae consequuntur. Ea at aspernatur totam accusamus, soluta quas distinctio minima, natus odio vel porro adipisci cupiditate voluptas placeat consequuntur sapiente, recusandae repudiandae dicta et!",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, quidem amet nam accusamus quae voluptatum dolor esse.",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae rem eaque reiciendis et a blanditiis totam mollitia sequi possimus similique doloremque praesentium placeat veritatis obcaecati voluptatibus fugit sapiente reprehenderit vitae fuga, laudantium dolor nemo ipsum quia. Delectus quae sequi repellendus officia, nemo incidunt maxime quasi necessitatibus ex, aspernatur perspiciatis in nobis ipsum illum porro eum perferendis repudiandae eligendi. Aliquid, perferendis?"],
+    "tags": ["Democracy", "Introspection"]
+  },
+}
