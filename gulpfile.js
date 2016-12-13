@@ -6,6 +6,9 @@ var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync').create();
 
 var path = {
+    js: 'src/javascript/*.js',
+    mock: 'src/mock/*.json',
+    partials: 'src/templates/partials/*.html',
     css:  'src/styles/*.css',
     html: 'src/templates/*.html',
     images: 'src/images/*.*',
@@ -14,6 +17,9 @@ var path = {
       css: 'src/vendor/css/*.css',
     },
     build: {
+      js: 'build/javascript/',
+      mock: 'build/mock/',
+      partials: 'build/partials/',
       css:  'build/styles/',
       images: 'build/images/',
       fonts: 'build/fonts/',
@@ -33,6 +39,21 @@ var path = {
 gulp.task('default', ['build', 'serve', 'watch']);
 
 /*Build for me*/
+gulp.task('js', function () {
+  return gulp.src(path.js)
+    .pipe(gulp.dest(path.build.js));
+});
+
+gulp.task('partials', function () {
+  return gulp.src(path.partials)
+    .pipe(gulp.dest(path.build.partials));
+});
+
+gulp.task('mock', function () {
+  return gulp.src(path.mock)
+    .pipe(gulp.dest(path.build.mock));
+});
+
 gulp.task('html', function () {
   return gulp.src(path.html)
     .pipe(nunjucks.compile())
@@ -98,7 +119,7 @@ gulp.task('fontsProd', function(){
   .pipe(gulp.dest(path.prod.fonts));
 });
 
-gulp.task('build', ['html', 'css', 'vendor-css', 'images', 'fonts']);
+gulp.task('build', ['html', 'css', 'vendor-css', 'images', 'fonts', 'js', 'mock', 'partials']);
 gulp.task('prod', ['htmlProd', 'css-minProd', 'vendor-css-minProd', 'imagesProd', 'fontsProd']);
 
 gulp.task('watch', function () {
@@ -107,6 +128,9 @@ gulp.task('watch', function () {
   gulp.watch(path.images, ['images']);
   gulp.watch(path.vendor.css, ['vendor-css']);
   gulp.watch(path.fonts, ['fonts']);
+  gulp.watch(path.js, ['js']);
+  gulp.watch(path.mock, ['mock']);
+  gulp.watch(path.partials, ['partials']);
 });
 
 gulp.task('serve', ['watch'], function() {

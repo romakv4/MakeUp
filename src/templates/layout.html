@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 
 <head>
   <title>Frontend course</title>
@@ -5,18 +7,21 @@
   <meta name="keywords" content="7Bits MakeUp">
   <meta name="description" content="7bits courses 2016-2017">
 
-  <link rel="shortcut icon" href="../images/favicon32x32.ico" sizes="32x32"/>
-  <link rel="shortcut icon" href="../images/favicon16x16.ico" sizes="16x16"/>
-  <link rel="stylesheet" type="text/css" href="../vendor/vendor.css"/>
-  <link rel="stylesheet" type="text/css" href="../styles/styles.css"/>
+  <link rel="shortcut icon" href="./images/favicon32x32.ico" sizes="32x32"/>
+  <link rel="shortcut icon" href="./images/favicon16x16.ico" sizes="16x16"/>
+  <link rel="stylesheet" type="text/css" href="./vendor/vendor.css"/>
+  <link rel="stylesheet" type="text/css" href="./styles/styles.css"/>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="http://mozilla.github.io/nunjucks/files/nunjucks.min.js"></script>
+  <script src="./javascript/script.js"></script>
 </head>
 
-    <img class="progress-bar" src="../images/progress-bar.png" alt="">
+    <img class="progress-bar" src="./images/progress-bar.png" alt="">
 
      <header class="header">
     <div class="container clearfix">
-      <div class="logo"><a href="index.html"><img src="../images/palo-alto.png" alt="Logo"></a>
+      <div class="logo"><a href="index.html"><img src="./images/palo-alto.png" alt="Logo"></a>
 
       </div>
 
@@ -25,7 +30,7 @@
         <li {% if navInactiveItem == 2 %} class="navigation__link disabled-link" {% else %} class="navigation__link" {% endif %}><a href="#">about</a></li>
         <li {% if navInactiveItem == 3 %} class="navigation__link disabled-link" {% else %} class="navigation__link" {% endif %}><a href="#">archieve</a></li>
         <li {% if navInactiveItem == 4 %} class="navigation__link disabled-link" {% else %} class="navigation__link" {% endif %}><a href="indexForms.html">contact</a></li>
-        <li class="navigation__link"><a href="#"><img class="search"  src="../images/search.png" alt="search"></a></li>
+        <li class="navigation__link"><a href="#"><img class="search"  src="./images/search.png" alt="search"></a></li>
       </ul>
 
     </div>
@@ -35,14 +40,14 @@
 
 <footer class="footer">
     <ul class="margin-container_footer">
-      <li class="footer-logo"><img src="../images/palo-alto.png"></li>
+      <li class="footer-logo"><img src="./images/palo-alto.png"></li>
       <div>
         <ul class="navigation_footer">
           <li {% if navInactiveItem == 1 %} class="navigation__link_footer disabled-link" {% else %} class="navigation__link_footer" {% endif %}><a href="index.html" class="disabled">home</a></li>
           <li {% if navInactiveItem == 2 %} class="navigation__link_footer disabled-link" {% else %} class="navigation__link_footer" {% endif %}><a href="#">about</a></li>
           <li {% if navInactiveItem == 3 %} class="navigation__link_footer disabled-link" {% else %} class="navigation__link_footer" {% endif %}><a href="#">archieve</a></li>
           <li {% if navInactiveItem == 4 %} class="navigation__link_footer disabled-link" {% else %} class="navigation__link_footer" {% endif %}><a href="indexForms.html">contact</a></li>
-          <li class="navigation__link_footer"><a href="#"><img class="search"  src="../images/search.png" alt="search"></a></li>
+          <li class="navigation__link_footer"><a href="#"><img class="search"  src="./images/search.png" alt="search"></a></li>
         </ul>
       </div>
       <hr class="footer__separator">
@@ -51,11 +56,14 @@
       <li class="footer__text">© 2015 - Palo Alto. All Rights Reserved. Designed & Developed by <a href="#">PixelBuddha Team</a></li>
     <div>
       <li class="social-networks">
-        <a href="#"><img src="../images/instagram.png" alt=""></a>
-        <a href="#"><img src="../images/facebook.png" alt=""></a>
-        <a href="#"><img src="../images/pinterest.png" alt=""></a>
-        <a href="#"><img src="../images/twitter.png" alt=""></a>
+        <a href="#"><img src="./images/instagram.png" alt=""></a>
+        <a href="#"><img src="./images/facebook.png" alt=""></a>
+        <a href="#"><img src="./images/pinterest.png" alt=""></a>
+        <a href="#"><img src="./images/twitter.png" alt=""></a>
       </li>
     </div>
     </ul>
   </footer>
+
+  </body>
+</html>

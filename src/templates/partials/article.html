@@ -1,0 +1,40 @@
+<button class="article__i-do-button"><a href="#">{{button}}</a></button>
+<article class="article">
+
+  {% if img.image1x %}
+    <img class="article__cover-image" width="{{img.width}}" height="{{img.height}}" srcset="{{img.image1x}} 1x, {{img.image2x}} 2x" alt="{{img.alt}}">
+  {% endif %}
+
+  <ul class = "paddings">
+    <li class="article__date">{{article_date}}</li>
+    <li><h1 class="article__head-of-article">{{head_of_article}}</h1></li>
+    <hr class="article__separator">
+    {% for txt in article_text %}
+      {% if txt.type == 'normal' %}
+        <li class="article__article-text">
+          {{txt.article_text}}
+        </li>
+      {% endif %}
+      {% if txt.type == 'quote' %}
+        <li class="line">
+          {{txt.article_text}}
+        </li>
+      {% endif %}
+      {% if txt.type == 'image' %}
+          <img class="article__image" width="{{txt.width}}" height="{{txt.height}}" srcset="{{txt.image1x}} 1x, {{img.image2x}} 2x" alt="{{txt.alt}}">
+      {% endif %}
+    {% endfor %}
+    <div class="article__footer">
+      <button class="article-footer__read-more"><a href="#s">read more</a></button>
+      <ul class="article-footer-hashtags">
+        {% for tag in tags %}
+          <li class="article-footer-hashtags__tags">
+            <a href="#">
+              {{tag}}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </ul>
+    </div>
+</article>
