@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% set navInactiveItem = 2 %}
+
+{% block main %}
+    <div class="article container">
+        <ul class="paddings">
+        <li><h1 class="article__head-of-article_contact">About</h1></li>
+        <hr class="article__separator">
+        <form class="form" action="index.html">
+            <p class="form-inscription">First Name</p><input class="form__input" type="text" maxlength="15" placeholder="Your Name" name="">
+             <p class="form-inscription">Last Name</p>
+          <input class="form__input" type="text" maxlength="20" placeholder="Your Last Lame" name="">
+          <p class="form-inscription">E-Mail</p>
+          <input class="form__input" type="text" maxlength="20" placeholder="E-Mail" name="">
+          <p class="form-inscription">Phone</p>
+          <input class="form__input" id="phone" type="text" placeholder="+_(___)___-__-__">
+          <p class="form-inscription">Date of Birth</p>
+          <input class="form__input" maxlength="40" type="text" placeholder="DD/MM/YYYY" name="">
+          <p class="form-inscription">Sex</p>
+          <div class="form__radio-tratata">
+            <label for="male"><input type="radio" name="sex" value="male" id="male"/>Male</label>
+          </div>
+          <div class="form__radio-tratata">
+            <label for="female"><input type="radio" name="sex" value="female" id="female"/>Female</label>
+          </div>
+        <div>
+        <input type="form__submit" value="submit" class="form__submit-button"><a href="#"></a></input>
+        </div>
+        </form>
+      </ul>
+    </div>
+    {% endblock %}

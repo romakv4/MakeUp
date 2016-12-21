@@ -19,8 +19,6 @@
         "article_date": "sep 18",
         "img":
         {
-          "width": 956,
-          "height": 636,
           "image1x": "./images/article-image1.jpg",
           "image2x": "./images/article-image1-2x.jpg"
         },

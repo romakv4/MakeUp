@@ -2,7 +2,7 @@
 <article class="article">
 
   {% if img.image1x %}
-    <img class="article__cover-image" width="{{img.width}}" height="{{img.height}}" srcset="{{img.image1x}} 1x, {{img.image2x}} 2x" alt="{{img.alt}}">
+    <img class="article__cover-image" srcset="{{img.image1x}} 1x, {{img.image2x}} 2x" alt="{{img.alt}}">
   {% endif %}
 
   <ul class = "paddings">

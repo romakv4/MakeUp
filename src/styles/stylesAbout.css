@@ -1,5 +1,27 @@
+.form {
+  padding:0 180px;
+}
 
-@import url('https://fonts.googleapis.com/css?family=Lato:italic, bold');
+.form__submit-button {
+  cursor: pointer;
+  display: inline-block;
+  width: 180px;
+  height: 50px;
+  background-color: #5c6bc0;
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  font: 21px 'Lato', serif;
+  font-weight: bold;
+  color: #fff;
+  outline: none;
+  text-decoration: none;
+  margin: 40px 0;
+}
+
+.form__submit-button:active {
+  background-color: #7a83ba;
+}
 
 .article__head-of-article_contact {
   padding-top: 80px;
@@ -14,52 +36,27 @@
   height: 55px;
   border: none;
   background-color: #f7f9fc;
-  margin-bottom: 30px;
   padding: 0 20px;
 }
 
 .form__input:active {
-  border: none;
+  border-color: #5c6bc0;
 }
 
 .form__input-subject {
   width: 100%;
 }
 
-.form__input-message {
-  width: 100%;
-  max-width: 100%;
-  height: 150px;
+.form-inscription {
+  font: 24px 'Lato', serif;
+  margin-bottom: 15px;
+  margin-top: 0px;
 }
 
-::-webkit-input-placeholder {
-  padding-top: 20px;
-}
-
-.form__send-message {
-  cursor: pointer;
-  display: inline-block;
-  width: 180px;
-  height: 50px;
-  background-color: #fff;
-  border: none;
-  text-transform: uppercase;
-  text-align: center;
-  font: 21px 'Lato', serif;
-  font-weight: bold;
-  color: #5c6bc0;
-  outline: none;
-  text-decoration: none;
-  margin: 40px 0;
-  margin-left: -10px;
-}
-
-.form__send-message:hover {
-  border: 2px solid #f1f1f1;
-}
-
-.form__send-message:active {
-  border: 2px solid #7d89cd;
+.form__radio-tratata {
+  font: 15px 'Lato', serif;
+  margin-bottom: 15px;
+  color: #c1c1c1;
 }
 
 .footer {
