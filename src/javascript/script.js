@@ -6,15 +6,16 @@ nunjucks.configure({
 });
 
 $(document).ready(function() {
-  $.getJSON( "../mock/structure.json", function(data) {
+  $.getJSON( "./mock/structure.json", function(data) {
     for (item in data.articles) {
           nunjucks.render('./partials/article.html', data.articles[item], function (err, res) {
                 $('.js-articles').append(res);
             });
-    }
+        }
   });
-//   $("#phone").inputmask({
-// "mask": "+9(999)999-99-99"
-// });
+  $( function() {
+    $("#date").datepicker();
+  });
+Inputmask({"mask": "+9 (999) 999-99-99"}).mask("#phone");
 });
 

@@ -14,6 +14,7 @@ var path = {
     images: 'src/images/*.*',
     fonts: 'src/fonts/*.ttf',
     vendor: {
+      js: 'src/vendor/js/*.js',
       css: 'src/vendor/css/*.css',
     },
     build: {
@@ -23,7 +24,10 @@ var path = {
       css:  'build/styles/',
       images: 'build/images/',
       fonts: 'build/fonts/',
-      vendor: 'build/vendor/',
+      vendor: {
+      js: 'build/vendor/js/',
+      css: 'build/vendor/css/',
+      },
       html: 'build/',
     },
     prod: {
@@ -41,7 +45,8 @@ gulp.task('default', ['build', 'serve', 'watch']);
 /*Build for me*/
 gulp.task('js', function () {
   return gulp.src(path.js)
-    .pipe(gulp.dest(path.build.js));
+  .pipe(concat('script.js'))
+  .pipe(gulp.dest(path.build.js));
 });
 
 gulp.task('partials', function () {
@@ -72,7 +77,13 @@ gulp.task('css', function () {
 gulp.task('vendor-css', function () {
   return gulp.src(path.vendor.css)
     .pipe(concat('vendor.css'))
-    .pipe(gulp.dest(path.build.vendor));
+    .pipe(gulp.dest(path.build.vendor.css));
+});
+
+gulp.task('vendor-js', function () {
+  return gulp.src(path.vendor.js)
+    .pipe(concat('vendor.js'))
+    .pipe(gulp.dest(path.build.vendor.js));
 });
 
 gulp.task('images', function(){
@@ -114,13 +125,8 @@ gulp.task('imagesProd', function(){
   .pipe(gulp.dest(path.prod.images));
 });
 
-gulp.task('fontsProd', function(){
-  return gulp.src(path.fonts)
-  .pipe(gulp.dest(path.prod.fonts));
-});
-
-gulp.task('build', ['html', 'css', 'vendor-css', 'images', 'fonts', 'js', 'mock', 'partials']);
-gulp.task('prod', ['htmlProd', 'css-minProd', 'vendor-css-minProd', 'imagesProd', 'fontsProd']);
+gulp.task('build', ['html', 'css', 'vendor-css', 'vendor-js', 'images', 'fonts', 'js', 'mock', 'partials']);
+gulp.task('prod', ['htmlProd', 'css-minProd', 'vendor-css-minProd', 'imagesProd']);
 
 gulp.task('watch', function () {
   gulp.watch(path.css, ['css']);
@@ -139,5 +145,5 @@ gulp.task('serve', ['watch'], function() {
       baseDir: path.build.html
     }
   });
-  gulp.watch('build/**').on('change', browserSync.reload);
+  gulp.watch('build/*').on('change', browserSync.reload);
 });
